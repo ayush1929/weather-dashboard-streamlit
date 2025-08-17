@@ -4,7 +4,7 @@ Interactive weather dashboard with an animated “Today” header, live conditio
 Built with **Streamlit**, **Altair**, and **Open-Meteo** APIs. Desktop-first layout that scales well on mobile.
 
 <p align="center">
-  <img alt="Weather Dashboard hero" src="app/static/hero_bg/sunny.png" width="640">
+  <img alt="Weather Dashboard hero" src="app/static/hero_bg/weather_dashboard.png" width="640">
 </p>
 
 ---
@@ -85,7 +85,7 @@ Open the local URL Streamlit prints (usually http://localhost:8501).
 **Embed example (GitHub Pages / Jekyll page)**
 
     <iframe
-      src="https://REPLACE_WITH_STREAMLIT_APP_URL/?embed=true"
+      src="https://weather-dashboard-ayush1929.streamlit.app/?embed=true"
       width="100%" height="1100"
       style="border:1px solid #1f2937; border-radius:14px;"
       frameborder="0" loading="lazy" allow="fullscreen">
@@ -152,7 +152,7 @@ No API keys required. Requests are anonymous and rate-limited by Open-Meteo.
 ---
 
 ## License
-This project is licensed under the MIT License. See #LICENSE for details.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
