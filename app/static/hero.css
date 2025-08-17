@@ -1,0 +1,26 @@
+/* app/static/hero.css */
+/* Global desktop-first polish for Streamlit */
+
+:root { color-scheme: dark; }
+
+/* Wider content on desktop, comfy paddings */
+.main .block-container{
+  max-width: 1320px;
+  padding: 16px 28px 56px;
+}
+
+/* Sidebar spacing */
+[data-testid="stSidebar"] { padding-top: 10px; }
+
+/* Tabs baseline spacing */
+[data-baseweb="tab-list"]{ margin-top: 10px; }
+
+/* Right-column actions container (Overview downloads) */
+.actions-right{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  align-items:stretch;
+}
+
+/* The hero itself has its own CSS inside the component iframe */
