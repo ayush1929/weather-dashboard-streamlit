@@ -10,8 +10,8 @@ Built with **Streamlit**, **Altair**, and **Open-Meteo** APIs. Desktop-first lay
 ---
 
 ## Live demo
-- App: https://REPLACE_WITH_STREAMLIT_APP_URL/
-- Embedded on my site: https://REPLACE_WITH_PORTFOLIO_PAGE_URL/
+- App: https://weather-dashboard-ayush1929.streamlit.app/
+- Embedded on my site: https://ayush1929.github.io/weather/
 
 ---
 
@@ -152,7 +152,7 @@ No API keys required. Requests are anonymous and rate-limited by Open-Meteo.
 ---
 
 ## License
-This project is licensed under the MIT License. See LICENSE for details.
+This project is licensed under the MIT License. See #LICENSE for details.
 
 ---
 
