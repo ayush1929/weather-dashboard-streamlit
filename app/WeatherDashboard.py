@@ -163,6 +163,8 @@ def add_flags(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 def auto_granularity(df: pd.DataFrame) -> str:
+    if df is None or not isinstance(df, pd.DataFrame) or df.empty or "date" not in df:
+        return "Daily"
     span = (df["date"].max() - df["date"].min()).days + 1
     return "Monthly" if span > 800 else ("Weekly" if span > 120 else "Daily")
 
@@ -530,7 +532,10 @@ except Exception:
     cur = _fallback_cur()
 
 render_today_hero(city_label, cur, height_px=320)  
-
+# --- Safety: stop early if no dataset loaded yet ---
+if daily is None or (isinstance(daily, pd.DataFrame) and daily.empty):
+    st.info("Choose a location and click **Load / Refresh** in the sidebar to fetch data.")
+    st.stop()
 # ---------- Granularity ----------
 with st.sidebar:
     st.header("3) Chart granularity")
