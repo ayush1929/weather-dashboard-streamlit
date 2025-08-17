@@ -11,7 +11,7 @@ Built with **Streamlit**, **Altair**, and **Open-Meteo** APIs. Desktop-first lay
 
 ## Live demo
 - App: https://weather-dashboard-ayush1929.streamlit.app/
-- Embedded on my site: https://ayush1929.github.io/weather/
+- Embedded on my site: https://ayush1929.github.io
 
 ---
 
